@@ -1,0 +1,20 @@
+.main-header {
+  border: 2px solid pink;
+  padding: 4rem 2rem;
+  margin: 10rem auto;
+}
+.main-header .header-image {
+  width: 100%;
+  max-width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.main-header .header-info h3 {
+  color: #290000;
+}
+.main-header .header-info ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=MainHeader.css.map */

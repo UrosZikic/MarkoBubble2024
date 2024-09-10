@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* 1B0112, 5A0834, 9D0B51, E44EC3 */
+html {
+  font-size: 62.5%;
+}
+/* width classes */
+.margin-layout {
+  width: 100%;
+  margin: 4rem auto;
+}
+.width-xl {
+  max-width: 120rem;
+}
+.width-l {
+  max-width: 102.4rem;
+}
+.width-ml {
+  max-width: 98.6rem;
+}
+.width-m {
+  max-width: 76.8rem;
+}
+.width-mm {
+  max-width: 70rem;
+}
+.width-ms {
+  max-width: 59.65rem;
+}
+.width-s {
+  max-width: 42.5rem;
+}
+/* flex classes */
+.default-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-justify-between {
+  justify-content: space-between;
+}
+.flex-justify-around {
+  justify-content: space-around;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-justify-end {
+  justify-content: end;
+}
+.flex-align-start {
+  align-items: start;
+}
+.flex-align-end {
+  align-items: end;
+}
+.flex-align-center {
+  align-items: center;
+}
+.flex-justify-self-start {
+  justify-self: start;
+}
+.flex-justify-self-end {
+  justify-self: end;
+}
+.flex-justify-self-center {
+  justify-self: center;
+}
+.flex-align-self-start {
+  align-self: start;
+}
+.flex-align-self-end {
+  align-self: end;
+}
+.flex-align-self-center {
+  align-self: center;
+}
+.gap-xl {
+  gap: 10rem;
+}
+.gap-l {
+  gap: 8rem;
+}
+.gap-m {
+  gap: 6rem;
+}
+.gap-s {
+  gap: 4rem;
+}
+.gap-xs {
+  gap: 2rem;
+}
+.gap-xxs {
+  gap: 1rem;
+}
+/* grid classes */
+.default-grid {
+  display: grid;
+}
+
+/* fonts */
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 7rem;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 8rem;
+  margin: 0;
+}
+a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+p {
+  font-size: 2rem;
+}
+
+/* colors */
+.text-white {
+  color: white;
+}
+/* paddings */

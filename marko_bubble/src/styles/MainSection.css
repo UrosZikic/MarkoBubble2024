@@ -1,0 +1,49 @@
+.main-section {
+  max-width: 140rem;
+  margin: 15rem auto;
+  background-color: #fcc2d7;
+}
+.main-section .main-section-image {
+  width: 100%;
+  max-width: 30rem;
+  height: 50rem;
+  object-fit: cover;
+}
+.main-section .main-section-info-container {
+  width: 100%;
+  padding: 2rem;
+}
+.main-section .main-section-info-container .main-section-info {
+  width: 100%;
+}
+.main-section .main-section-info-container .main-section-info h2 {
+  color: #290000;
+  font-weight: 300;
+  text-shadow: #583030 2px 5px;
+}
+.main-section .main-section-info-container .main-section-info h2:nth-child(2) {
+  align-self: center;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+.main-section .main-section-info-container .main-section-info h2:last-child {
+  align-self: end;
+}
+.main-section .main-section-info-container .main-section-product {
+  width: 100%;
+  max-width: 20rem;
+}
+.main-section .main-section-info-container .product-btn {
+  width: 100%;
+  max-width: 16rem;
+  padding: 1rem;
+  color: #290000;
+  text-align: center;
+  border: 1px solid #290000;
+  font-size: 2rem;
+}
+.main-section .main-section-text p {
+  color: #290000;
+}
+
+/*# sourceMappingURL=MainSection.css.map */

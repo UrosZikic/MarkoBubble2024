@@ -1,0 +1,51 @@
+$primary-color: #290000;
+
+.main-section {
+  max-width: 140rem;
+  margin: 15rem auto;
+  background-color: #fcc2d7;
+  .main-section-image {
+    width: 100%;
+    max-width: 30rem;
+    height: 50rem;
+    object-fit: cover;
+  }
+  .main-section-info-container {
+    width: 100%;
+    padding: 2rem;
+    .main-section-info {
+      width: 100%;
+      h2 {
+        color: $primary-color;
+        font-weight: 300;
+        text-shadow: #583030 2px 5px;
+      }
+      h2:nth-child(2) {
+        align-self: center;
+        margin: 1rem 0;
+        font-weight: 600;
+      }
+      h2:last-child {
+        align-self: end;
+      }
+    }
+    .main-section-product {
+      width: 100%;
+      max-width: 20rem;
+    }
+    .product-btn {
+      width: 100%;
+      max-width: 16rem;
+      padding: 1rem;
+      color: $primary-color;
+      text-align: center;
+      border: 1px solid $primary-color;
+      font-size: 2rem;
+    }
+  }
+  .main-section-text {
+    p {
+      color: $primary-color;
+    }
+  }
+}
