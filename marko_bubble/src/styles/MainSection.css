@@ -1,7 +1,6 @@
 .main-section {
+  transform: translateY(-110px);
   max-width: 140rem;
-  margin: 15rem auto;
-  background-color: #fcc2d7;
 }
 .main-section .main-section-image {
   width: 100%;
@@ -19,7 +18,6 @@
 .main-section .main-section-info-container .main-section-info h2 {
   color: #290000;
   font-weight: 300;
-  text-shadow: #583030 2px 5px;
 }
 .main-section .main-section-info-container .main-section-info h2:nth-child(2) {
   align-self: center;
@@ -31,7 +29,9 @@
 }
 .main-section .main-section-info-container .main-section-product {
   width: 100%;
-  max-width: 20rem;
+  max-width: 17.5rem;
+  object-fit: cover;
+  transform: rotate(-15deg);
 }
 .main-section .main-section-info-container .product-btn {
   width: 100%;
@@ -41,9 +41,96 @@
   text-align: center;
   border: 1px solid #290000;
   font-size: 2rem;
+  font-weight: 300;
 }
-.main-section .main-section-text p {
-  color: #290000;
+.main-section .main-support-info p {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-section {
+    transform: translateY(-100px);
+  }
+  .main-section .main-section-info-container {
+    transform: translateX(-70px);
+    max-width: 42.5rem;
+  }
+  .main-section .main-section-info-container .main-section-info h2 {
+    font-size: 6rem;
+  }
+  .main-section .main-support-info {
+    gap: 0;
+  }
+  .main-section .main-support-info p {
+    font-size: 2rem;
+    width: 24rem;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .main-section .main-section-info-container {
+    transform: translateX(-100px);
+  }
+  .main-section .main-section-info-container .main-section-info h2 {
+    font-size: 5rem;
+  }
+  .main-section .main-section-info-container .main-section-info h2:last-child {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-section .main-section-info-container .main-section-info h2:last-child span {
+    align-self: end;
+  }
+  .main-section .main-support-info p {
+    font-size: 1.8rem;
+    width: 22rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .main-section {
+    position: relative;
+    transform: translate(0);
+    margin-bottom: 10rem;
+  }
+  .main-section .main-section-image {
+    position: absolute;
+  }
+  .main-section .main-section-info-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translateX(0px);
+  }
+  .main-section .main-section-info-container .product-btn {
+    color: white;
+    border: 1px solid white;
+  }
+  .main-section .main-section-info-container .main-support-info-container {
+    gap: 0;
+  }
+  .main-section .main-section-info-container .main-section-info h2 {
+    font-size: 5rem;
+    color: white;
+  }
+  .main-section .main-section-info-container .main-section-info h2:last-child {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-section .main-section-info-container .main-section-info h2:last-child span {
+    align-self: end;
+  }
+  .main-section .main-support-info p {
+    font-size: 1.8rem;
+    width: 22rem;
+  }
+  p {
+    color: white;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .main-section .main-section-info-container .main-support-info-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=MainSection.css.map */

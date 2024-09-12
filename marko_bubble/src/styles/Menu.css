@@ -1,0 +1,20 @@
+.menu-container {
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(45deg, #faa2c1, #d8f5a2);
+  z-index: 999;
+}
+.menu-container ul {
+  list-style: none;
+}
+.menu-container ul li .bubble {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #fcc2d7, #b2f2bb);
+}
+
+/*# sourceMappingURL=Menu.css.map */

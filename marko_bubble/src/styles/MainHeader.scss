@@ -1,7 +1,7 @@
 $primary-color: #fff;
 
 .main-header {
-  border: 2px solid pink;
+  // border: 2px solid pink;
   padding: 4rem 2rem;
   margin: 10rem auto;
   .header-image {
@@ -12,11 +12,58 @@ $primary-color: #fff;
     object-fit: cover;
   }
   .header-info {
-    h3 {
+    h1 {
       color: #290000;
     }
     ul {
       list-style: none;
     }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    .header-info {
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  header {
+    .header-info {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 651px) {
+  .main-header {
+    margin: 5rem auto 10rem auto;
+
+    .header-image {
+      max-width: 16rem;
+      height: 16rem;
+    }
+    .header-info {
+      h1 {
+        font-size: 3rem;
+      }
+      ul {
+        gap: 4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem auto;
   }
 }

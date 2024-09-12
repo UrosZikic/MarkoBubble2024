@@ -2,11 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: roboto, arial;
+}
+body {
+  /* background: linear-gradient(45deg, #faa2c1, transparent); */
+  background: linear-gradient(45deg, #faa2c1, #d8f5a2);
 }
 /* 1B0112, 5A0834, 9D0B51, E44EC3 */
 html {
   font-size: 62.5%;
+}
+/* positions */
+.pos-absolute {
+  position: absolute;
+}
+.pos-relative {
+  position: relative;
 }
 /* width classes */
 .margin-layout {
@@ -109,6 +120,7 @@ h2,
 h3 {
   text-transform: uppercase;
 }
+h1,
 h3 {
   font-size: 7rem;
   text-decoration: underline;

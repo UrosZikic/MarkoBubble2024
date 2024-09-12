@@ -1,0 +1,37 @@
+footer {
+  padding: 3rem 0;
+}
+footer p,
+footer address,
+footer a {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #290000;
+  font-style: unset;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-div-main div {
+    width: 269px;
+  }
+  .footer .footer-div-main div div {
+    justify-content: start;
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    gap: 4rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-div-main {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=Footer.css.map */

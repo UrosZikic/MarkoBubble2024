@@ -1,7 +1,6 @@
 .nav {
   margin: 0;
   padding: 2rem 0;
-  background-color: #faa2c1;
 }
 .nav .navigation-menu {
   list-style: none;
@@ -10,11 +9,29 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #fcc2d7, #fcc2d7, #b2f2bb);
+  background: linear-gradient(45deg, #fcc2d7, #b2f2bb);
 }
 .nav .navigation-menu li a {
-  color: #fff;
-  font-weight: 300;
+  color: #290000;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.nav .menu-btn {
+  font-size: 4rem;
+  display: none !important;
 }
 
-/*# sourceMappingURL=Nav.css.map */
+@media only screen and (max-width: 750px) {
+  .nav {
+    justify-content: flex-end;
+    padding: 2rem 4rem;
+  }
+  .nav .navigation-menu {
+    display: none;
+  }
+  .nav .menu-btn {
+    display: block !important;
+  }
+}
+
+/*# sourceMappingURL=nav.css.map */

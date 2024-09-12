@@ -5,7 +5,7 @@ import IonIcon from "@reacticons/ionicons";
 
 export default function MainHeader() {
   return (
-    <header className="margin-layout width-xl default-flex flex-justify-around main-header">
+    <header className="margin-layout width-xl default-flex flex-justify-around main-header gap-s">
       <HeaderContent />
     </header>
   );
@@ -20,21 +20,21 @@ function HeaderContent() {
         alt="bubble tea logo"
       />
       <div className="header-info default-flex flex-column gap-s">
-        <h3>bubble zajecar</h3>
+        <h1>bubble zajecar</h1>
         <ul className="default-flex flex-justify-center gap-l">
           <li>
-            <a href="">
+            <a href="" style={{ color: "#FF0000" }}>
               <IonIcon name="logo-youtube" size="large" />
             </a>
           </li>
           <li>
-            <a href="">
-              <IonIcon name="logo-youtube" size="large" />
+            <a href="" style={{ color: "#833AB4" }}>
+              <IonIcon name="logo-instagram" size="large" />
             </a>
           </li>
           <li>
-            <a href="">
-              <IonIcon name="logo-youtube" size="large" />
+            <a href="" style={{ color: "#1877F2" }}>
+              <IonIcon name="logo-facebook" size="large" />
             </a>
           </li>
         </ul>

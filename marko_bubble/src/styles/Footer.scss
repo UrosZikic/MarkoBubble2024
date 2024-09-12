@@ -1,0 +1,40 @@
+footer {
+  padding: 3rem 0;
+  // background-color: #fcc2d7;
+
+  p,
+  address,
+  a {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #290000;
+    font-style: unset;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    .footer-div-main {
+      div {
+        width: 269px;
+        div {
+          justify-content: start;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    gap: 4rem;
+    flex-direction: column;
+    align-items: center;
+    .footer-div-main {
+      flex-direction: column;
+    }
+  }
+}

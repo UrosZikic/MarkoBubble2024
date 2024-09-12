@@ -27,8 +27,8 @@ function MainSectionInfo() {
           <IonIcon name="happy-outline" size="small" />
         </h2>
       </div>
-      <div className="default-flex flex-justify-end gap-l">
-        <div className="default-flex flex-column flex-justify-around">
+      <div className="default-flex flex-justify-end gap-l main-support-info-container">
+        <div className="default-flex flex-column flex-justify-around main-support-info gap-s">
           <p className="flex-justify-self-center">
             Dostavljamo nase <br /> proizvode maloprodajama!
           </p>
