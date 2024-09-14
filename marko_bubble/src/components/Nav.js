@@ -2,12 +2,13 @@ import "../styles/Nav.css";
 import IonIcon from "@reacticons/ionicons";
 import { useState, useEffect } from "react";
 
-export default function Nav() {
-  const [triggerMenu, setTriggerMenu] = useState(false);
+export default function Nav({ initiateToggle }) {
   return (
     <nav className="default-flex flex-justify-center nav">
       <NavigationMenu />
-      <IonIcon name="reorder-three-outline" className="menu-btn" />
+      <button onClick={initiateToggle} className="menu-btn-container">
+        <IonIcon name="reorder-three-outline" className="menu-btn" />
+      </button>
     </nav>
   );
 }

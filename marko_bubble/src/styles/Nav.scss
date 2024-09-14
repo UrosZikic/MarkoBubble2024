@@ -11,7 +11,7 @@ $primary-color: #290000;
         width: 3rem;
         height: 3rem;
         border-radius: 50%;
-        background: linear-gradient(45deg, #fcc2d7, #b2f2bb);
+        background: linear-gradient(45deg, #fcc2d7, #e9fac8);
       }
 
       a {
@@ -21,9 +21,13 @@ $primary-color: #290000;
       }
     }
   }
-  .menu-btn {
-    font-size: 4rem;
-    display: none !important;
+  .menu-btn-container {
+    background-color: transparent;
+    border: none;
+    .menu-btn {
+      font-size: 4rem;
+      color: #290000;
+    }
   }
 }
 
@@ -34,8 +38,14 @@ $primary-color: #290000;
     .navigation-menu {
       display: none;
     }
-    .menu-btn {
-      display: block !important;
+    .menu-btn-container {
+      display: block;
     }
+  }
+}
+
+@media only screen and (min-width: 751px) {
+  .menu-btn-container {
+    display: none;
   }
 }
