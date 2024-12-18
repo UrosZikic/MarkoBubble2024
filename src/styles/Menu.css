@@ -5,7 +5,7 @@
   right: 0;
   width: 100%;
   background: linear-gradient(45deg, #faa2c1, #d8f5a2);
-  z-index: 999;
+  z-index: 998;
 }
 .menu-container ul {
   list-style: none;
@@ -20,7 +20,6 @@
 }
 .menu-container ul li .social-container .line {
   height: 2px;
-  width: 100%;
   background-color: #290000;
   transition: all 0.5s;
 }

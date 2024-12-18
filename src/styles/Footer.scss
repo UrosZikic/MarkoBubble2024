@@ -5,7 +5,7 @@ footer {
   p,
   address,
   a {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #290000;
     font-style: unset;
@@ -25,6 +25,9 @@ footer {
         }
       }
     }
+  }
+  .text-reset {
+    text-align: start;
   }
 }
 

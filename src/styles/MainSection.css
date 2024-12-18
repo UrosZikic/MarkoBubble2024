@@ -59,6 +59,16 @@
   .main-section .main-section-info-container .main-section-info h2 {
     font-size: 6rem;
   }
+  .main-section .main-section-info-container .justify-shade {
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  .main-section .main-section-info-container .justify-shade .product-btn {
+    color: white;
+    border: 1px solid white;
+    margin-top: 1rem;
+  }
   .main-section .main-support-info {
     gap: 0;
   }
@@ -96,7 +106,7 @@
     position: absolute;
   }
   .main-section .main-section-info-container {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     transform: translateX(0px);
   }
   .main-section .main-section-info-container .product-btn {
@@ -116,6 +126,9 @@
   }
   .main-section .main-section-info-container .main-section-info h2:last-child span {
     align-self: end;
+  }
+  .main-section .main-section-info-container .justify-shade {
+    background-color: transparent;
   }
   .main-section .main-support-info p {
     font-size: 1.8rem;

@@ -1,0 +1,12 @@
+.menu-content {
+  opacity: 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 24rem;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all 0.75s ease;
+}
+.menu-content:hover {
+  background-color: #fff;
+  color: #830732 !important;
+}

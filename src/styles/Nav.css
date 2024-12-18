@@ -1,6 +1,16 @@
 .nav {
   margin: 0;
   padding: 2rem 0;
+  z-index: 999;
+  position: relative;
+}
+.nav .header-image {
+  width: 100%;
+  max-width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid white;
 }
 .nav .navigation-menu {
   list-style: none;
@@ -27,7 +37,7 @@
 
 @media only screen and (max-width: 750px) {
   .nav {
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 2rem 4rem;
   }
   .nav .navigation-menu {
@@ -43,4 +53,4 @@
   }
 }
 
-/*# sourceMappingURL=nav.css.map */
+/*# sourceMappingURL=Nav.css.map */

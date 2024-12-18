@@ -7,15 +7,28 @@ import MainSection from "./components/MainSection";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Menu from "./components/Menu";
+import MainProducts from "./components/MainProducts";
+import ProductInfo from "./components/ProductInfo";
 
 import { useState, useEffect } from "react";
 // import misc
 function App() {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [loadAnimation, setLoadAnimation] = useState(0);
 
   function initiateToggle() {
     setToggleMenu((prev) => !prev);
   }
+
+  useEffect(() => {
+    const animateInterval = setInterval(() => {
+      setLoadAnimation((prev) => prev + 1);
+    }, 200);
+
+    if (loadAnimation > 5) clearInterval(animateInterval);
+
+    return () => clearInterval(animateInterval);
+  }, [loadAnimation]);
 
   useEffect(() => {
     if (toggleMenu) {
@@ -32,12 +45,14 @@ function App() {
 
   return (
     <>
-      <Nav initiateToggle={initiateToggle} />
-      <Menu toggleMenu={toggleMenu} />
-      <MainHeader />
-      <MainSection />
-      <Contact />
-      <Footer />
+      <Nav initiateToggle={initiateToggle} loadAnimation={loadAnimation} />
+      <Menu toggleMenu={toggleMenu} initiateToggle={initiateToggle} />
+      <MainHeader loadAnimation={loadAnimation} />
+      <MainProducts />
+      <MainSection loadAnimation={loadAnimation} />
+      <ProductInfo />
+      <Contact loadAnimation={loadAnimation} />
+      <Footer loadAnimation={loadAnimation} />
     </>
   );
 }

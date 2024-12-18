@@ -2,7 +2,19 @@ $primary-color: #290000;
 .nav {
   margin: 0;
   padding: 2rem 0;
+  z-index: 999;
+  position: relative;
   // background-color: #faa2c1;
+
+  .header-image {
+    width: 100%;
+    max-width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid white;
+  }
+
   .navigation-menu {
     list-style: none;
 
@@ -33,7 +45,7 @@ $primary-color: #290000;
 
 @media only screen and (max-width: 750px) {
   .nav {
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 2rem 4rem;
     .navigation-menu {
       display: none;

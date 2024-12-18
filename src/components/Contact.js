@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
 
-export default function ContactUs() {
+export default function ContactUs({ loadAnimation }) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -28,16 +28,59 @@ export default function ContactUs() {
 
   return (
     <section className="contact" id="contact">
-      <h2>Kontaktirajte nas</h2>
+      <h2 className={`transparent ${loadAnimation >= 1 && "displayed"}`}>
+        Kontaktirajte nas
+      </h2>
       <form ref={form} onSubmit={sendEmail}>
-        <label htmlFor="user_name">Ime</label>
-        <input type="text" name="user_name" id="user_name" required />
-        <label htmlFor="user_email">Mejl</label>
-        <input type="email" name="user_email" id="user_email" required />
-        <label htmlFor="message">Poruka</label>
-        <textarea name="message" id="message" required />
-        <label htmlFor="sub"></label>
-        <input type="submit" name="sub" value="Send" id="sub" />
+        <label
+          htmlFor="user_name"
+          className={`transparent ${loadAnimation >= 2 && "displayed"}`}
+        >
+          Ime
+        </label>
+        <input
+          type="text"
+          name="user_name"
+          id="user_name"
+          required
+          className={`transparent ${loadAnimation >= 2 && "displayed"}`}
+        />
+        <label
+          htmlFor="user_email"
+          className={`transparent ${loadAnimation >= 3 && "displayed"}`}
+        >
+          Mejl
+        </label>
+        <input
+          type="email"
+          name="user_email"
+          id="user_email"
+          required
+          className={`transparent ${loadAnimation >= 3 && "displayed"}`}
+        />
+        <label
+          htmlFor="message"
+          className={`transparent ${loadAnimation >= 4 && "displayed"}`}
+        >
+          Poruka
+        </label>
+        <textarea
+          name="message"
+          id="message"
+          required
+          className={`transparent ${loadAnimation >= 4 && "displayed"}`}
+        />
+        <label
+          htmlFor="sub"
+          className={`transparent ${loadAnimation >= 5 && "displayed"}`}
+        ></label>
+        <input
+          type="submit"
+          name="sub"
+          value="Send"
+          id="sub"
+          className={`transparent ${loadAnimation >= 6 && "displayed"}`}
+        />
       </form>
     </section>
   );
