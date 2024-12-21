@@ -10,10 +10,10 @@ export default function ContactUs({ loadAnimation }) {
 
     emailjs
       .sendForm(
-        "service_sxnbe4j",
-        "template_041id5q",
+        "service_8bf7x6b",
+        "template_4jqk61u",
         form.current,
-        "K2PSUkRlxwE8wR98m"
+        "eNeELHIOuAwL8bAKs"
       )
       .then(
         (result) => {

@@ -1,4 +1,4 @@
-$primary-color: #290000;
+$primary-color: #000;
 
 .main-section {
   transform: translateY(-110px);
@@ -155,13 +155,14 @@ $primary-color: #290000;
       p {
         font-size: 1.8rem;
         width: 22rem;
+        color: #fff;
       }
     }
   }
 
-  p {
-    color: white;
-  }
+  // p {
+  //   color: white;
+  // }
 }
 
 @media only screen and (max-width: 425px) {

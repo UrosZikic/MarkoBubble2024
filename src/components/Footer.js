@@ -2,12 +2,14 @@ import IonIcon from "@reacticons/ionicons";
 import "../styles/Footer.css";
 
 export default function Footer({ loadAnimation }) {
+  let date = new Date();
+  date = date.getFullYear();
   return (
     <footer className="default-width default-flex flex-justify-center gap-l footer">
       <div className="default-flex gap-s footer-div-main">
         <div className="default-flex flex-column gap-xxs">
           <p className={`transparent ${loadAnimation >= 1 && "displayed"}`}>
-            Bubble Zajecar
+            Bubble Tea Zaječar
           </p>
           <address
             className={`transparent ${loadAnimation >= 2 && "displayed"}`}
@@ -15,7 +17,7 @@ export default function Footer({ loadAnimation }) {
             Timočke bune 17-15, Zaječar 19000
           </address>
           <p className={`transparent ${loadAnimation >= 3 && "displayed"}`}>
-            Copyright © 2024 Bubble Zajecar
+            Copyright © {date} Bubble Tea Zajecar
           </p>
         </div>
         <div className="default-flex flex-column gap-xxs">
@@ -31,13 +33,13 @@ export default function Footer({ loadAnimation }) {
             href="tel:+4733378901"
             className={`transparent ${loadAnimation >= 4 && "displayed"}`}
           >
-            tel: 123455788
+            tel: 0604424470
           </a>
           <a
             href="mailto:mail@gmial.com"
             className={`transparent ${loadAnimation >= 5 && "displayed"}`}
           >
-            mail@gmail.com
+            zivadinovicmarko4444@gmail.com
           </a>
         </div>
       </div>
@@ -58,11 +60,12 @@ export default function Footer({ loadAnimation }) {
           >
             Pratite nas
           </p>
-          <div className="default-flex flex-justify-between">
+          <div className="default-flex flex-justify-between gap-xxs">
             <a
-              href="https://www.instagram.com/bubblezajecar/"
+              href="https://www.instagram.com/bubbleteazajecar"
               rel="noreferrer"
               target="_blank"
+              className="footer-social-media-link"
             >
               <IonIcon
                 name="logo-instagram"
@@ -74,6 +77,7 @@ export default function Footer({ loadAnimation }) {
               href="https://www.youtube.com/@bubblezajecar"
               rel="noreferrer"
               target="_blank"
+              className="footer-social-media-link"
             >
               <IonIcon
                 name="logo-youtube"
@@ -85,9 +89,22 @@ export default function Footer({ loadAnimation }) {
               href="https://www.facebook.com/profile.php?id=100095226961393"
               rel="noreferrer"
               target="_blank"
+              className="footer-social-media-link"
             >
               <IonIcon
                 name="logo-facebook"
+                size="large"
+                className={`transparent ${loadAnimation >= 6 && "displayed"}`}
+              />
+            </a>
+            <a
+              href="https://www.tiktok.com/@bubblezajecar"
+              rel="noreferrer"
+              target="_blank"
+              className="footer-social-media-link"
+            >
+              <IonIcon
+                name="logo-tiktok"
                 size="large"
                 className={`transparent ${loadAnimation >= 6 && "displayed"}`}
               />

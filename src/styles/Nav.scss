@@ -1,4 +1,4 @@
-$primary-color: #290000;
+$primary-color: #000;
 .nav {
   margin: 0;
   padding: 2rem 0;
@@ -38,7 +38,7 @@ $primary-color: #290000;
     border: none;
     .menu-btn {
       font-size: 4rem;
-      color: #290000;
+      color: $primary-color;
     }
   }
 }

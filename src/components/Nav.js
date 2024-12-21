@@ -38,10 +38,10 @@ function NavigationMenu({ loadAnimation }) {
       <li className={`transparent ${loadAnimation >= 4 && "displayed"}`}>
         <a href="">Nasi proizvodi</a>
       </li> */}
-      <li className={`transparent ${loadAnimation >= 5 && "displayed"}`}>
+      <li className={`transparent ${loadAnimation >= 2 && "displayed"}`}>
         <div className="bubble"></div>
       </li>
-      <li className={`transparent ${loadAnimation >= 6 && "displayed"}`}>
+      <li className={`transparent ${loadAnimation >= 3 && "displayed"}`}>
         <a href="#contact">Kontakt</a>
       </li>
     </ul>

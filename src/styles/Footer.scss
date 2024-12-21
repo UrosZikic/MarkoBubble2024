@@ -1,3 +1,5 @@
+$primary: #000;
+
 footer {
   padding: 3rem 0;
   // background-color: #fcc2d7;
@@ -5,11 +7,14 @@ footer {
   p,
   address,
   a {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-weight: 400;
-    color: #290000;
+    color: $primary;
     font-style: unset;
   }
+}
+.footer-social-media-link {
+  font-size: 1.4rem !important;
 }
 
 @media only screen and (max-width: 768px) {

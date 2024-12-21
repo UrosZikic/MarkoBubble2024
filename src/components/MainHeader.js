@@ -16,7 +16,7 @@ function HeaderContent({ loadAnimation }) {
     <>
       <div className="header-info default-flex flex-column gap-s">
         <ul className="default-flex flex-justify-center gap-l">
-          <li className={`transparent ${loadAnimation >= 3 && "displayed"}`}>
+          <li className={`transparent ${loadAnimation >= 2 && "displayed"}`}>
             <a
               href="https://www.youtube.com/@bubblezajecar"
               target="_blank"
@@ -26,9 +26,9 @@ function HeaderContent({ loadAnimation }) {
               <IonIcon name="logo-youtube" size="large" />
             </a>
           </li>
-          <li className={`transparent ${loadAnimation >= 4 && "displayed"}`}>
+          <li className={`transparent ${loadAnimation >= 3 && "displayed"}`}>
             <a
-              href=" https://www.instagram.com/bubblezajecar/"
+              href="https://www.instagram.com/bubbleteazajecar"
               target="_blank"
               rel="noreferrer"
               style={{ color: "#833AB4" }}
@@ -36,7 +36,7 @@ function HeaderContent({ loadAnimation }) {
               <IonIcon name="logo-instagram" size="large" />
             </a>
           </li>
-          <li className={`transparent ${loadAnimation >= 5 && "displayed"}`}>
+          <li className={`transparent ${loadAnimation >= 4 && "displayed"}`}>
             <a
               href="https://www.facebook.com/profile.php?id=100095226961393"
               target="_blank"
@@ -44,6 +44,16 @@ function HeaderContent({ loadAnimation }) {
               style={{ color: "#1877F2" }}
             >
               <IonIcon name="logo-facebook" size="large" />
+            </a>
+          </li>
+          <li className={`transparent ${loadAnimation >= 5 && "displayed"}`}>
+            <a
+              href="https://www.tiktok.com/@bubblezajecar"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "#000" }}
+            >
+              <IonIcon name="logo-tiktok" size="large" />
             </a>
           </li>
         </ul>

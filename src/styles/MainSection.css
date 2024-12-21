@@ -16,7 +16,7 @@
   width: 100%;
 }
 .main-section .main-section-info-container .main-section-info h2 {
-  color: #290000;
+  color: #000;
   font-weight: 300;
 }
 .main-section .main-section-info-container .main-section-info h2:nth-child(2) {
@@ -37,9 +37,9 @@
   width: 100%;
   max-width: 16rem;
   padding: 1rem;
-  color: #290000;
+  color: #000;
   text-align: center;
-  border: 1px solid #290000;
+  border: 1px solid #000;
   font-size: 2rem;
   font-weight: 300;
 }
@@ -133,9 +133,7 @@
   .main-section .main-support-info p {
     font-size: 1.8rem;
     width: 22rem;
-  }
-  p {
-    color: white;
+    color: #fff;
   }
 }
 @media only screen and (max-width: 425px) {

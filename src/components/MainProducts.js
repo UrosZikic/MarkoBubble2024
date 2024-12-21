@@ -1,4 +1,4 @@
-export default function MainProducts() {
+export default function MainProducts({ loadAnimation }) {
   const products = [
     {
       src: "../images/jabuka_kivi.jpg",
@@ -11,7 +11,7 @@ export default function MainProducts() {
     },
   ];
   // return <ProductsVOne products={products} />;
-  return <ProductsVTwo products={products} />;
+  return <ProductsVTwo products={products} loadAnimation={loadAnimation} />;
 }
 
 function Product({ src }) {
@@ -62,13 +62,21 @@ function ProductsVOne({ products }) {
   );
 }
 
-function ProductsVTwo({ products }) {
+function ProductsVTwo({ products, loadAnimation }) {
   return (
     <>
-      <div className="width-m margin-layout products-main-v2">
+      <div className="width-m margin-layout products-main-v2 background-white">
         <div className="default-grid grid-t-products products-grid">
-          <img src={products[2].src} alt="bubble tea - blue tropical" />
-          <div className="default-flex">
+          <img
+            src={products[2].src}
+            alt="bubble tea - blue tropical"
+            className={`transparent ${loadAnimation >= 1 && "displayed"}`}
+          />
+          <div
+            className={`default-flex background-white transparent ${
+              loadAnimation >= 2 && "displayed"
+            }`}
+          >
             <ul className="flex-align-self-center">
               <li>Bubble Tea- Blue Tropical 300ml</li>
               <li>Cena: 249,99RSD</li>
@@ -81,9 +89,13 @@ function ProductsVTwo({ products }) {
         </div>
 
         <div className="default-grid grid-t-products products-grid">
-          <div className="default-flex">
+          <div
+            className={`default-flex background-white transparent ${
+              loadAnimation >= 3 && "displayed"
+            }`}
+          >
             <ul className="flex-align-self-center">
-              <li>Bubble Tea- Blue Tropical 300ml</li>
+              <li>Bubble Tea- Lubenica Borovnica 300ml</li>
               <li>Cena: 249,99RSD</li>
               <li>
                 Opis: Bezalkoholni osvežavajući napitak sa ukusom lubenice i
@@ -91,14 +103,26 @@ function ProductsVTwo({ products }) {
               </li>
             </ul>
           </div>
-          <img src={products[1].src} alt="bubble tea - blue tropical" />
+          <img
+            src={products[1].src}
+            alt="bubble tea - lubenica borovnica"
+            className={`transparent ${loadAnimation >= 4 && "displayed"}`}
+          />
         </div>
 
         <div className="default-grid grid-t-products products-grid">
-          <img src={products[0].src} alt="bubble tea - blue tropical" />
-          <div className="default-flex">
+          <img
+            src={products[0].src}
+            alt="bubble tea - jabuka kivi"
+            className={`transparent ${loadAnimation >= 5 && "displayed"}`}
+          />
+          <div
+            className={`default-flex background-white transparent ${
+              loadAnimation >= 6 && "displayed"
+            }`}
+          >
             <ul className="flex-align-self-center">
-              <li>Bubble Tea- Blue Tropical 300ml</li>
+              <li>Bubble Tea- Jabuka Kivi 300ml</li>
               <li>Cena: 249,99RSD</li>
               <li>
                 Opis: Bezalkoholni osvežavajući napitak sa ukusom jabuke i

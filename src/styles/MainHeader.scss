@@ -1,4 +1,4 @@
-$primary-color: #fff;
+$primary-color: #000;
 
 .main-header {
   // border: 2px solid pink;
@@ -14,7 +14,7 @@ $primary-color: #fff;
   // }
   .header-info {
     h1 {
-      color: #290000;
+      color: $primary-color;
     }
     ul {
       list-style: none;

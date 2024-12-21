@@ -22,7 +22,7 @@
   background: linear-gradient(45deg, #fcc2d7, #e9fac8);
 }
 .nav .navigation-menu li a {
-  color: #290000;
+  color: #000;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -32,7 +32,7 @@
 }
 .nav .menu-btn-container .menu-btn {
   font-size: 4rem;
-  color: #290000;
+  color: #000;
 }
 
 @media only screen and (max-width: 750px) {

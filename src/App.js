@@ -48,9 +48,9 @@ function App() {
       <Nav initiateToggle={initiateToggle} loadAnimation={loadAnimation} />
       <Menu toggleMenu={toggleMenu} initiateToggle={initiateToggle} />
       <MainHeader loadAnimation={loadAnimation} />
-      <MainProducts />
+      <MainProducts loadAnimation={loadAnimation} />
       <MainSection loadAnimation={loadAnimation} />
-      <ProductInfo />
+      <ProductInfo loadAnimation={loadAnimation} />
       <Contact loadAnimation={loadAnimation} />
       <Footer loadAnimation={loadAnimation} />
     </>
